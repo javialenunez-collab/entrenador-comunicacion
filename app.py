@@ -6,7 +6,10 @@ import urllib.request
 import urllib.error
 from datetime import date, datetime, timedelta
 
+from dotenv import load_dotenv
 from flask import Flask, g, jsonify, render_template, request
+
+load_dotenv()
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join(BASE_DIR, "data", "entrenador.db")
@@ -19,7 +22,7 @@ CLAUDE_MODEL = os.environ.get("CLAUDE_MODEL", "claude-haiku-4-5-20251001")
 ANTHROPIC_URL = "https://api.anthropic.com/v1/messages"
 
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
-GROQ_MODEL = os.environ.get("GROQ_MODEL", "llama-3.3-70b-versatile")
+GROQ_MODEL = os.environ.get("GROQ_MODEL", "openai/gpt-oss-120b")
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 
 app = Flask(__name__)
@@ -144,6 +147,7 @@ def _llamar_anthropic(user_content):
             "content-type": "application/json",
             "x-api-key": ANTHROPIC_API_KEY,
             "anthropic-version": "2023-06-01",
+            "user-agent": "entrenador-comunicacion/1.0",
         },
         method="POST",
     )
@@ -179,6 +183,7 @@ def _llamar_groq(user_content):
         headers={
             "content-type": "application/json",
             "authorization": f"Bearer {GROQ_API_KEY}",
+            "user-agent": "entrenador-comunicacion/1.0",
         },
         method="POST",
     )
