@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entrenador de Comunicación</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <h1>Entrenador de Comunicación</h1>
+    <div id="racha" class="racha">🔥 Racha: <span id="racha-numero">0</span> días</div>
+  </header>
+
+  <main>
+    <section id="pantalla-ejercicio" class="tarjeta">
+      <div class="categorias" id="categorias">
+        {% for clave, nombre in categorias.items() %}
+        <button class="chip" data-categoria="{{ clave }}">{{ nombre }}</button>
+        {% endfor %}
+        <button class="chip chip-sorpresa" data-categoria="">🎲 Sorpréndeme</button>
+      </div>
+
+      <div id="consigna-box" class="consigna-box" hidden>
+        <p id="consigna-texto"></p>
+      </div>
+
+      <div id="respuesta-box" hidden>
+        <textarea id="texto-respuesta" rows="6" placeholder="Escribí acá tu respuesta, o tocá el micrófono para hablar..."></textarea>
+        <div class="controles">
+          <button id="btn-mic" class="btn-mic" title="Hablar">🎤</button>
+          <span id="estado-mic"></span>
+          <button id="btn-enviar" class="btn-primario">Corregir</button>
+        </div>
+      </div>
+
+      <div id="cargando" hidden>Pensando una devolución para vos...</div>
+
+      <div id="feedback-box" class="feedback-box" hidden></div>
+    </section>
+
+    <section class="tarjeta">
+      <h2>Historial</h2>
+      <div id="historial"></div>
+    </section>
+  </main>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

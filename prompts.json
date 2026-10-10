@@ -1,0 +1,42 @@
+{
+  "contar": [
+    "Contame algo que te pasó hoy, como si se lo estuvieras contando a un amigo.",
+    "Contame la última vez que te enojaste y por qué.",
+    "Contame un recuerdo de tu infancia que te guste.",
+    "Contame cómo fue tu día más raro de este último mes.",
+    "Contame algo gracioso que te pasó y que todavía te hace reír.",
+    "Contame cómo arrancó tu día hoy, paso a paso."
+  ],
+  "explicar": [
+    "Explicame cómo funciona tu negocio, como si yo no supiera nada del tema.",
+    "Explicame por qué elegiste hacer las cosas como las hacés en tu trabajo.",
+    "Explicame algo que aprendiste leyendo este último tiempo.",
+    "Explicame cómo armarías un presupuesto mensual, en tus palabras.",
+    "Explicame la diferencia entre dos cosas que vos conocés bien (por ejemplo, dos proveedores, dos formas de hacer algo).",
+    "Explicame un problema técnico que resolviste hace poco, como si yo no entendiera nada de tecnología."
+  ],
+  "opinar": [
+    "¿Qué opinás de cómo está tu negocio ahora comparado con el año pasado? Contame por qué.",
+    "¿Qué cosa cambiarías de tu rutina si pudieras? Contame por qué.",
+    "Dame tu opinión sincera sobre algo que la gente suele hacer mal al manejar su plata.",
+    "¿Estás de acuerdo o en desacuerdo con que leer libros te hace más inteligente? Contame por qué.",
+    "¿Qué es lo más importante para vos a la hora de elegir en quién confiar? Contame por qué.",
+    "Si alguien te pidiera un consejo para empezar un negocio, ¿qué le dirías?"
+  ],
+  "describir": [
+    "Describime tu lugar de trabajo, como si yo nunca lo hubiera visto.",
+    "Describime a una persona importante en tu vida, sin decir su nombre.",
+    "Describime cómo es un día normal tuyo, de principio a fin.",
+    "Describime tu ciudad a alguien que nunca estuvo ahí.",
+    "Describime cómo te imaginás tu vida dentro de cinco años.",
+    "Describime un objeto que usás todos los días y por qué es importante para vos."
+  ],
+  "responder": [
+    "Alguien te pregunta de golpe: '¿por qué debería confiar en vos?' ¿Qué le respondés?",
+    "Un cliente te dice que tu precio es muy caro. ¿Qué le decís?",
+    "Alguien te pregunta por qué tardaste tanto en responder un mensaje. ¿Qué le contestás?",
+    "Te preguntan: '¿qué es lo que peor hacés?' Respondé con sinceridad.",
+    "Alguien te pide que le expliques rápido, en 30 segundos, a qué te dedicás.",
+    "Un amigo te dice que no entendió nada de lo que le explicaste. ¿Cómo se lo volvés a explicar?"
+  ]
+}
